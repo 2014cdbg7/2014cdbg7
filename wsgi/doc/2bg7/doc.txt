@@ -7,3 +7,114 @@
 ===
 
 2bg7 報告摘要內容
+
+機械設計工程系 協同產品設計實習
+
+期末報告
+
+ 
+
+ 
+
+班 級：四設二乙
+
+組 員：
+
+40123251鄭志善
+
+40123220李晉杰
+
+40123215朱穎晟
+
+摘要
+
+　　這次期末報告的重點是將我們在這學期學到的協同做一個整合，利用Creo做組立進而延伸使用Pro/Web.Link做遠端自動組立，配合Dokuwiki以及雲端架設CMSimply達成遠端協同在利用Github 與 Bitbucket管理所有的雲端資料，這份期末報告，我們將以上在課堂上所學到的轉成書面資料並加以做紀錄而完成了這份報告，各組員分工合作達到協同的目的，用我們所學到的在這份報告中呈現出來。
+
+ 
+
+ 
+
+ 
+
+一.                在近端利用 Creo 繪製零件
+
+ 
+
+二.                利用遠端 Pro/Web.Link 程式修改近端 Creo 零件尺寸
+
+1.零件網際參數調控Creo系統config.pro 檔案設定
+
+加入下列兩行:web_enable_javascript on
+
+             regen_failure_handling resolve_mode
+
+ 
+
+表示允許系統在嵌入式IE 瀏覽器中執行Javascript，而且零組件變數修改後能自動更新零組件
+
+2.IE 的設定。
+
+IE : 工具→網際網路選項→安全性→信任的網站
+
+將所要啟動 Pro/Web.Link 的網站 URL 加入後，設定以下兩項安全等級:
+
+ActiveX 控制項與插件→啟用
+
+指令碼處理→Active scripting→啟用
+
+ 
+
+3. cdb專案http://2014cdb-mdenfu.rhcloud.com/cdag5/cube1設為信任網站
+4. 開啟 Creo 2.0, 建立一個 cube, relations: d0 = a, d1 = b, d2 = c (a, b, c 為 local parameters)
+
+ 
+
+三.                將近端零件轉為 STL, 上傳至遠端 CMSimply 網站中檢視
+
+ 
+
+四.                在近端利用手動組立零件
+
+ 
+
+五.                近端利用遠端網站Pro/Web.Link 自動組立
+
+cdb專案http://2014cda-mdenfu.rhcloud.com/cdag30/man/設為信任網站
+
+ 
+
+六.                近端與遠端建立Dokuwiki 網站
+
+第7組Dokuwiki  http://php-cadt13bg3.rhcloud.com/doku.php
+
+ 
+
+七.                手動或半自動方式管理Dokuwiki 的使用者
+
+ 
+
+ 
+
+八.                近端與雲端建立CMSimply 網站
+
+第7組CMSimply https://40123251-cadt13bg3.rhcloud.com
+
+ 
+
+九.                Github 與Bitbucket 管理資料版次
+
+第7組Github  https://github.com/2014cdbg7/2014cdbg7
+
+ 
+
+十.                近端Leo Editor 與可攜程式系統管理資料
+
+ 
+
+十ㄧ. 近端pandoc產生pdf 與html 報告資料
+
+ 
+
+心得
+
+　　這份期末報告，帶給我們的不僅僅只是一份報告，更是我們我們在這學期所學到的成果，從個人到多人，從近端到遠端，在未來協同的工作勢必越來越多，而這們課帶給我們的不僅只是單純的電腦課，是一堂讓我們開闊視野，學到更多東西的一門課，這門課讓我們了解到協同的便利性與重要性，未來協同是種趨勢只會越來越多不會越來越少，這種跨時間跨地區的工作方式便利性很多，人們不用聚在一起便可在雲端平台上共同完成一樣作業，而這門課讓我們深深體會到協同的重要，也開啟了我們對這世界未知的一扇大門，進而讓我了解到並從中學習，而我們從這門課的收穫無法細數，讓我們在未來對於協同工作有更多的幫助。
